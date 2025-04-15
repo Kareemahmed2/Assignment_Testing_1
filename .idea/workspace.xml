@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf13d1b-501d-406e-b5ff-a7f27e133ccc" name="Changes" comment="final dependency commit">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="caf13d1b-501d-406e-b5ff-a7f27e133ccc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JFree/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/JFree/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JFree/src/test/DiscountCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/JFree/src/test/DiscountCalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Testing_1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Testing_1.iml.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/DiscountCalculatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/DiscountCalculatorTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +22,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.DiscountCalculatorTest.executor": "Run",
+    "JUnit.DiscountCalculatorTest.testDiscountPercentWhenWeekIsOdd.executor": "Run",
     "JUnit.DiscountManagerTest.executor": "Run",
     "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
@@ -38,7 +31,44 @@
     "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="DiscountCalculatorTest.testDiscountPercentWhenWeekIsOdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Testing_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.DiscountCalculatorTest" />
+      <option name="METHOD_NAME" value="testDiscountPercentWhenWeekIsOdd" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DiscountCalculatorTest.testDiscountPercentWhenWeekIsOdd" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="Discount Calculator test commit">
+      <option name="closed" value="true" />
+      <created>1744719498984</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744719498984</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="final dependency commit" />
+    <MESSAGE value="Discount Calculator test commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Discount Calculator test commit" />
   </component>
 </project>
