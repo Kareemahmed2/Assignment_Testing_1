@@ -1,25 +1,20 @@
 package test;
 
 import org.jfree.data.time.Year;
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.Calendar;
 import java.util.Date;
 
 public class YearTest {
-    Year year;
 
-    private void arrange() {
-        year = new Year();
-    }
-    
     @Test
-    public void testYearDefaultCtor() {
-        arrange();
-        assertEquals(2025, year.getYear());
+    public void testConstructorWithYearParameter() {
+        Year year = new Year(2024);
+        assertEquals(2024, year.getYear());
     }
-    
+
     @Test
     public void testConstructorWithDateParameter() {
         Calendar calendar = Calendar.getInstance();
@@ -174,4 +169,4 @@ public class YearTest {
         Date expected = calendar.getTime();
         assertEquals(expected, year.getEnd());
     }
-}
+} 
