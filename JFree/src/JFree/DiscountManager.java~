@@ -1,0 +1,23 @@
+package JFree;
+
+public class DiscountManager {
+    boolean isDiscountsSeason;
+    IDiscountCalculator discountCalculator;
+
+    public DiscountManager(boolean isDiscountsSeason, IDiscountCalculator discountCalculator) {
+        this.isDiscountsSeason = isDiscountsSeason;
+        this.discountCalculator = discountCalculator;
+    }
+
+    public double calculatePriceAfterDiscount(double price) {
+        if (! isDiscountsSeason) {
+            return price;
+        }
+
+        if (discountCalculator.isTheSpecialWeek())
+            return price * .8;
+        //Bug: the prices were being multiplied by the discount number(5,7) instead of the actual percentage(5%,7%)
+        //Bug Located and Fixed
+        return price * (discountCalculator.getDiscountPercentage()/100.0);
+    }
+}

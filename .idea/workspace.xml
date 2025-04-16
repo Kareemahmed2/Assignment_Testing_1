@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="caf13d1b-501d-406e-b5ff-a7f27e133ccc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JFree/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/JFree/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JFree/src/test/DiscountCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/JFree/src/test/DiscountCalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/DiscountCalculatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/DiscountCalculatorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JFree/src/test/DiscountManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/JFree/src/test/DiscountManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JFree/src/test/YearTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/JFree/src/test/YearTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +21,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "JUnit.DiscountCalculatorTest.executor": "Run",
     "JUnit.DiscountCalculatorTest.testDiscountPercentWhenWeekIsOdd.executor": "Run",
     "JUnit.DiscountManagerTest.executor": "Run",

@@ -60,7 +60,7 @@ public class YearTest {
     public void testGetFirstMillisecondWithNullCalendar() {
         Year year = new Year(2024);
         assertThrows(IllegalArgumentException.class, () -> {
-            year.getFirstMillisecond((Calendar) null);
+            year.getFirstMillisecond(null);
         });
     }
 
@@ -68,7 +68,7 @@ public class YearTest {
     public void testGetLastMillisecondWithNullCalendar() {
         Year year = new Year(2024);
         assertThrows(IllegalArgumentException.class, () -> {
-            year.getLastMillisecond((Calendar) null);
+            year.getLastMillisecond(null);
         });
     }
 
