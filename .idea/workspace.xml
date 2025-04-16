@@ -7,8 +7,9 @@
     <list default="true" id="caf13d1b-501d-406e-b5ff-a7f27e133ccc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JFree/src/test/DiscountManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/JFree/src/test/DiscountManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JFree/src/test/YearTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/JFree/src/test/YearTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/DiscountManagerTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/DiscountManagerTest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/DiscountManagerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/DiscountManagerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/YearTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/YearTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,14 +26,18 @@
     "JUnit.DiscountCalculatorTest.executor": "Run",
     "JUnit.DiscountCalculatorTest.testDiscountPercentWhenWeekIsOdd.executor": "Run",
     "JUnit.DiscountManagerTest.executor": "Run",
+    "JUnit.DiscountManagerTest.testCalculatePriceWhenDiscountsSeasonIsTrueAndSpecialWeekIsFalse.executor": "Run",
+    "JUnit.DiscountManagerTest.testCalculatePriceWhenDiscountsSeasonIsTrueAndSpecialWeekIsTrue.executor": "Run",
+    "com.codeium.enabled": "true",
     "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.codeium.AppSettingsConfigurable"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.DiscountManagerTest.testCalculatePriceWhenDiscountsSeasonIsTrueAndSpecialWeekIsFalse">
     <configuration name="DiscountCalculatorTest.testDiscountPercentWhenWeekIsOdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Testing_1" />
       <extension name="coverage">
@@ -49,8 +54,58 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DiscountManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Testing_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.DiscountManagerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscountManagerTest.testCalculatePriceWhenDiscountsSeasonIsTrueAndSpecialWeekIsFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Testing_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.DiscountManagerTest" />
+      <option name="METHOD_NAME" value="testCalculatePriceWhenDiscountsSeasonIsTrueAndSpecialWeekIsFalse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscountManagerTest.testCalculatePriceWhenDiscountsSeasonIsTrueAndSpecialWeekIsTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Testing_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.DiscountManagerTest" />
+      <option name="METHOD_NAME" value="testCalculatePriceWhenDiscountsSeasonIsTrueAndSpecialWeekIsTrue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DiscountManagerTest.testCalculatePriceWhenDiscountsSeasonIsTrueAndSpecialWeekIsFalse" />
+        <item itemvalue="JUnit.DiscountManagerTest" />
+        <item itemvalue="JUnit.DiscountManagerTest.testCalculatePriceWhenDiscountsSeasonIsTrueAndSpecialWeekIsTrue" />
         <item itemvalue="JUnit.DiscountCalculatorTest.testDiscountPercentWhenWeekIsOdd" />
       </list>
     </recent_temporary>
@@ -71,5 +126,9 @@
     <MESSAGE value="final dependency commit" />
     <MESSAGE value="Discount Calculator test commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Discount Calculator test commit" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
