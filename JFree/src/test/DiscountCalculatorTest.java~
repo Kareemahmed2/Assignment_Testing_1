@@ -13,7 +13,7 @@ public class DiscountCalculatorTest {
     Calendar calendar=Calendar.getInstance();
     @Test
     public void testIsTheSpecialWeekWhenFalse() throws Exception {
-        calendar.set(2025, Calendar.MARCH, 22);
+        calendar.set(2025, Calendar.MARCH, 22);  // March 22, 2025
         Date date = calendar.getTime();
         Week week = new Week(date);
         discountCalculator = new DiscountCalculator(week);

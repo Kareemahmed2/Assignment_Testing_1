@@ -7,7 +7,6 @@
     <list default="true" id="caf13d1b-501d-406e-b5ff-a7f27e133ccc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JFree/src/test/DiscountCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/JFree/src/test/DiscountCalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JFree/src/test/DiscountManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/JFree/src/test/DiscountManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,8 +58,8 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.DiscountManagerTest.testCalculatePriceWhenPriceIsZeroAndDiscountsSeasonIsFalse">
-    <configuration name="DiscountManagerTest.testCalculatePriceWhenPriceIsNegative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DiscountManagerTest.testCalculatePriceWhenPriceIsNegativeAndDiscountsSeasonIsFalse">
+    <configuration name="DiscountManagerTest.testCalculatePriceWhenDiscountsSeasonIsTrueAndSpecialWeekIsFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Testing_1" />
       <extension name="coverage">
         <pattern>
@@ -70,7 +69,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.DiscountManagerTest" />
-      <option name="METHOD_NAME" value="testCalculatePriceWhenPriceIsNegative" />
+      <option name="METHOD_NAME" value="testCalculatePriceWhenDiscountsSeasonIsTrueAndSpecialWeekIsFalse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscountManagerTest.testCalculatePriceWhenDiscountsSeasonIsTrueAndSpecialWeekIsTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Testing_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.DiscountManagerTest" />
+      <option name="METHOD_NAME" value="testCalculatePriceWhenDiscountsSeasonIsTrueAndSpecialWeekIsTrue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -124,29 +139,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiscountManagerTest.testCalculatePriceWhenPriceIsZeroAndDiscountsSeasonIsTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Testing_1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.DiscountManagerTest" />
-      <option name="METHOD_NAME" value="testCalculatePriceWhenPriceIsZeroAndDiscountsSeasonIsTrue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DiscountManagerTest.testCalculatePriceWhenPriceIsZeroAndDiscountsSeasonIsFalse" />
-        <item itemvalue="JUnit.DiscountManagerTest.testCalculatePriceWhenPriceIsZeroAndDiscountsSeasonIsTrue" />
         <item itemvalue="JUnit.DiscountManagerTest.testCalculatePriceWhenPriceIsNegativeAndDiscountsSeasonIsFalse" />
         <item itemvalue="JUnit.DiscountManagerTest.testCalculatePriceWhenPriceIsNegativeAndDiscountsSeasonIsTrue" />
-        <item itemvalue="JUnit.DiscountManagerTest.testCalculatePriceWhenPriceIsNegative" />
+        <item itemvalue="JUnit.DiscountManagerTest.testCalculatePriceWhenDiscountsSeasonIsTrueAndSpecialWeekIsTrue" />
+        <item itemvalue="JUnit.DiscountManagerTest.testCalculatePriceWhenDiscountsSeasonIsTrueAndSpecialWeekIsFalse" />
+        <item itemvalue="JUnit.DiscountManagerTest.testCalculatePriceWhenPriceIsZeroAndDiscountsSeasonIsFalse" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +166,7 @@
       <option name="presentableId" value="Default" />
       <updated>1744979877811</updated>
       <workItem from="1744979878369" duration="728000" />
-      <workItem from="1745005479819" duration="2354000" />
+      <workItem from="1745005479819" duration="6363000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
