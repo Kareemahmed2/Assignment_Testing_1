@@ -11,10 +11,6 @@ import java.util.Date;
 public class DiscountCalculatorTest {
     DiscountCalculator discountCalculator;
     Calendar calendar=Calendar.getInstance();
-
-    public void setup() throws Exception {
-        DiscountCalculator discountCalculator = new DiscountCalculator(new Week());
-    }
     @Test
     public void testIsTheSpecialWeekWhenFalse() throws Exception {
         calendar.set(2025, Calendar.MARCH, 22);  // March 22, 2025

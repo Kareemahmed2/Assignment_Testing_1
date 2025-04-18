@@ -1,9 +1,13 @@
 package test;
+import JFree.DiscountCalculator;
 import JFree.DiscountManager;
 import JFree.IDiscountCalculator;
+import org.jfree.data.time.Week;
 import org.jmock.Expectations;
 import org.jmock.Mockery;
 import org.junit.Test;
+
+import java.util.Calendar;
 
 import static org.junit.Assert.*;
 
@@ -74,5 +78,53 @@ public class DiscountManagerTest {
         assertEquals(expectedPrice,actualPrice,0.001);
         // make sure that mocking Expectations Is Satisfied
         mockingContext.assertIsSatisfied();
+    }
+    @Test(expected = IllegalArgumentException.class)
+    public void testCalculatePriceWhenPriceIsNegativeAndDiscountsSeasonIsFalse() throws Exception {
+        boolean isDiscountsSeason = false;
+        double originalPrice = -100.0;
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(2025, Calendar.JANUARY, 1);
+        Week week = new Week(calendar.getTime());
+        DiscountCalculator discountCalculator = new DiscountCalculator(week);
+        DiscountManager discountManager = new DiscountManager(isDiscountsSeason, discountCalculator);
+        discountManager.calculatePriceAfterDiscount(originalPrice);
+    }
+    @Test(expected = IllegalArgumentException.class)
+    public void testCalculatePriceWhenPriceIsNegativeAndDiscountsSeasonIsTrue() throws Exception {
+        boolean isDiscountsSeason = true;
+        double originalPrice = -200.0;
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(2025, Calendar.JANUARY, 3);
+        Week week = new Week(calendar.getTime());
+        DiscountCalculator discountCalculator = new DiscountCalculator(week);
+        DiscountManager discountManager = new DiscountManager(isDiscountsSeason, discountCalculator);
+        discountManager.calculatePriceAfterDiscount(originalPrice);
+    }
+
+    @Test
+    public void testCalculatePriceWhenPriceIsZeroAndDiscountsSeasonIsTrue() throws Exception {
+        boolean isDiscountsSeason = true;
+        double originalPrice = 0;
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(2025, Calendar.JANUARY, 3);
+        Week week = new Week(calendar.getTime());
+        DiscountCalculator discountCalculator = new DiscountCalculator(week);
+        DiscountManager discountManager = new DiscountManager(isDiscountsSeason, discountCalculator);
+        double actualPrice = discountManager.calculatePriceAfterDiscount(originalPrice);
+        assertEquals(originalPrice, actualPrice, 0.001);
+    }
+
+    @Test
+    public void testCalculatePriceWhenPriceIsZeroAndDiscountsSeasonIsFalse() throws Exception {
+        boolean isDiscountsSeason = false;
+        double originalPrice =0;
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(2025, Calendar.JANUARY, 3);
+        Week week = new Week(calendar.getTime());
+        DiscountCalculator discountCalculator = new DiscountCalculator(week);
+        DiscountManager discountManager = new DiscountManager(isDiscountsSeason, discountCalculator);
+        double actualPrice = discountManager.calculatePriceAfterDiscount(originalPrice);
+        assertEquals(originalPrice, actualPrice, 0.001);
     }
 }
